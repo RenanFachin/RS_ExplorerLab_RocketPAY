@@ -10,3 +10,10 @@ const secondaryCreditCardBgColor = document.querySelector(".cc-bg svg > g g:nth-
 primaryCreditCardBgColor.setAttribute("fill", "#C045F5")
 secondaryCreditCardBgColor.setAttribute("fill", "#4572FF")
 
+
+// Criando um array para receber as cores possíveis
+const colors = {
+    "visa": ['#436D99', "#2D57F2"],
+    "mastercard": ["#DF6F29", "#C69347"],
+    "default": ["black", "gray"]
+}
