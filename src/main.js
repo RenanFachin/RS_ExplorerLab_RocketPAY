@@ -6,6 +6,9 @@ import "./css/index.css"
 const primaryCreditCardBgColor = document.querySelector(".cc-bg svg > g g:nth-child(1) path")
 const secondaryCreditCardBgColor = document.querySelector(".cc-bg svg > g g:nth-child(2) path")
 
+// Trocando a logo
+const creditCardLogo = document.querySelector(".cc-logo span:nth-child(2) img")
+
 // Usando uma função para capturar a bandeira do cartão
 function setCardType(cardType){
     // Criando um array para receber as cores possíveis
@@ -22,6 +25,10 @@ function setCardType(cardType){
     
     primaryCreditCardBgColor.setAttribute("fill", colors[cardType][0])
     secondaryCreditCardBgColor.setAttribute("fill", colors[cardType][1])
+
+
+    // Alterando a svg do logo de acordo com o cardType
+    creditCardLogo.setAttribute("src", `cc-${cardType}.svg`)
 }
 
 setCardType("visa")
