@@ -6,14 +6,22 @@ import "./css/index.css"
 const primaryCreditCardBgColor = document.querySelector(".cc-bg svg > g g:nth-child(1) path")
 const secondaryCreditCardBgColor = document.querySelector(".cc-bg svg > g g:nth-child(2) path")
 
-// Alterando a color deste path
-primaryCreditCardBgColor.setAttribute("fill", "#C045F5")
-secondaryCreditCardBgColor.setAttribute("fill", "#4572FF")
+// Usando uma função para capturar a bandeira do cartão
+function setCardType(cardType){
+    // Criando um array para receber as cores possíveis
+    const colors = {
+        "visa": ['#436D99', "#2D57F2"],
+        "mastercard": ["#DF6F29", "#C69347"],
+        "default": ["black", "gray"]
+    }
 
-
-// Criando um array para receber as cores possíveis
-const colors = {
-    "visa": ['#436D99', "#2D57F2"],
-    "mastercard": ["#DF6F29", "#C69347"],
-    "default": ["black", "gray"]
+    // Alterando a color deste path
+    // colors[cardType] -> Maneira de se acessar uma propriedade de um objeto através de um variável
+    // Semelhante à colors.visa ou colors.mastercad
+    // [0] e [1] são as posições
+    
+    primaryCreditCardBgColor.setAttribute("fill", colors[cardType][0])
+    secondaryCreditCardBgColor.setAttribute("fill", colors[cardType][1])
 }
+
+setCardType("visa")
