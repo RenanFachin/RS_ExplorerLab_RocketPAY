@@ -18,11 +18,26 @@ function setCardType(cardType){
 function changeCreditCardBgColor(cardType){
     // Criando um array para receber as cores possíveis
     const colors = {
-        "visa": ['#436D99', "#2D57F2"],
-        "mastercard": ["#5C5353", "#DB5E58"],
-        "american": ["#5C5353", "#AEF5CF"],
-        "elo": ["#5C5953","#F5E1AB"],
-        "default": ["black", "gray"]
+        "visa":{
+            primary:"#436D99",
+            secondary: "#2D57F2"
+        },
+        "mastercard": {
+            primary:"#5C5353",
+            secondary: "#DB5E58"
+        },
+        "american": {
+            primary: "#5C5353",
+            secondary: "#AEF5CF"
+        },
+        "elo": {
+            primary: "#5C5953",
+            secondary: "#F5E1AB"
+        },
+        "default": {
+            primary: "black", 
+            secondary: "gray"
+        }
     }
 
     // Alterando a color deste path
@@ -30,8 +45,8 @@ function changeCreditCardBgColor(cardType){
     // Semelhante à colors.visa ou colors.mastercad
     // [0] e [1] são as posições
     
-    primaryCreditCardBgColor.setAttribute("fill", colors[cardType][0])
-    secondaryCreditCardBgColor.setAttribute("fill", colors[cardType][1])
+    primaryCreditCardBgColor.setAttribute("fill", colors[cardType].primary)
+    secondaryCreditCardBgColor.setAttribute("fill", colors[cardType].secondary)
 }
 
 function changeCreditCardLogo(cardType){
