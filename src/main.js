@@ -19,8 +19,9 @@ function changeCreditCardBgColor(cardType){
     // Criando um array para receber as cores possíveis
     const colors = {
         "visa": ['#436D99', "#2D57F2"],
-        "mastercard": ["#DF6F29", "#C69347"],
-        "american": ["#27612F", "#90FAA0"],
+        "mastercard": ["#5C5353", "#DB5E58"],
+        "american": ["#5C5353", "#AEF5CF"],
+        "elo": ["#5C5953","#F5E1AB"],
         "default": ["black", "gray"]
     }
 
