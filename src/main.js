@@ -31,4 +31,7 @@ function setCardType(cardType){
     creditCardLogo.setAttribute("src", `cc-${cardType}.svg`)
 }
 
-setCardType("visa")
+
+// globalThis é a mesma coisa que adicionar na window do projeto
+// Disponibilizando a função criada para acesso
+globalThis.setCardType = setCardType
