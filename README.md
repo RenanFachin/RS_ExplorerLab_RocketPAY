@@ -11,6 +11,7 @@ Nesta edição, será construido um componente que simula o formulário de preen
   <a href="#-aprendizados">Aprendizados</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-intalação">Instalação</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#memo-licença">Licença</a>
 </p>
 
@@ -23,7 +24,7 @@ Nesta edição, será construido um componente que simula o formulário de preen
 </p>
 
 ## 🏆 Aprendizados
-- GIT CLI:
+  ### GIT CLI:
   É uma ferramenta para uso do GitHub através das linhas de comando do terminal. Com o git cli é possível:
     - Visualizar, criar e clonar repositórios
     - Criar, fechar, editar e visualizasr problemas e pull requests
@@ -31,6 +32,9 @@ Nesta edição, será construido um componente que simula o formulário de preen
     - Executar, visualizar e listar fluxos de trabalho
     - Criar, listar, visualizar e excluir versões
     - Entre outros!
+
+  ### Vite
+  Utilização do VITE em um projeto vanilla JS. O vite utiliza o ES6 module para realizar os seus imports e exports
 
 ## 🚀 Tecnologias
 
@@ -48,6 +52,21 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 ## 🎨 Layout
 
   - [Layout do projeto](https://www.figma.com/file/gpqavL469k0pPUGOmAQEM9/Explorer-Lab-%2301/duplicate)
+
+## 💿 Instalação
+
+```bash
+# Faça o clone do repotório
+  git@github.com:RenanFachin/RS_ExplorerLab_RocketPAY.git
+
+# Acessar a pasta do projeto pelo terminal
+  cd RS_ExplorerLab_RocketPAY
+
+# Faça a instalação das depêndencias
+  npm i
+
+# Rodando o projeto
+  npm run dev
 
 ## 📝 Licença
 
