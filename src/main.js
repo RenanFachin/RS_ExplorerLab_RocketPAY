@@ -9,12 +9,18 @@ const secondaryCreditCardBgColor = document.querySelector(".cc-bg svg > g g:nth-
 // Trocando a logo
 const creditCardLogo = document.querySelector(".cc-logo span:nth-child(2) img")
 
-// Usando uma função para capturar a bandeira do cartão
+
 function setCardType(cardType){
+    changeCreditCardBgColor(cardType)
+    changeCreditCardLogo(cardType)
+}
+
+function changeCreditCardBgColor(cardType){
     // Criando um array para receber as cores possíveis
     const colors = {
         "visa": ['#436D99', "#2D57F2"],
         "mastercard": ["#DF6F29", "#C69347"],
+        "american": ["#27612F", "#90FAA0"],
         "default": ["black", "gray"]
     }
 
@@ -25,8 +31,9 @@ function setCardType(cardType){
     
     primaryCreditCardBgColor.setAttribute("fill", colors[cardType][0])
     secondaryCreditCardBgColor.setAttribute("fill", colors[cardType][1])
+}
 
-
+function changeCreditCardLogo(cardType){
     // Alterando a svg do logo de acordo com o cardType
     creditCardLogo.setAttribute("src", `cc-${cardType}.svg`)
 }

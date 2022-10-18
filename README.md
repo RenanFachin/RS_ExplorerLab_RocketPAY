@@ -36,6 +36,15 @@ Nesta edição, será construido um componente que simula o formulário de preen
   ### Vite
   Utilização do VITE em um projeto vanilla JS. O vite utiliza o ES6 module para realizar os seus imports e exports
 
+  ### JS | DOM
+  Disponibilizar a função para ser acessada em um contexto global
+    - globalThis.setCardType
+
+## Melhorias e Desafios feitos para ir além
+- Adicionado uma terceira bandeira de cartão (American Express).
+  - Modelo criado no Figma e também incorporado ao código
+- Divisão de responsabilidade sobre cada função.
+
 ## 🚀 Tecnologias
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
@@ -51,7 +60,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 🎨 Layout
 
-  - [Layout do projeto](https://www.figma.com/file/gpqavL469k0pPUGOmAQEM9/Explorer-Lab-%2301/duplicate)
+  - [Layout do projeto](https://www.figma.com/file/I2lc4S7kAm2VFfe1avXMxn/Explorer-Lab-%2301-(Copy)?node-id=3%3A1165)
 
 ## 💿 Instalação
 
