@@ -48,7 +48,8 @@ Nesta edição, será construido um componente que simula o formulário de preen
 
 ## 🚀 Melhorias e Desafios feitos para ir além
 - Adicionado uma terceira bandeira de cartão (`American Express` e `Elo`).
-  - Modelo criado no Figma e também incorporado ao código
+  - Modelo criado no Figma e também incorporado ao código;
+  - Aplicando máscara dinâmica nestas novas bandeiras;
 - Divisão de responsabilidade sobre cada função.
 
 ## 🚀 Tecnologias
