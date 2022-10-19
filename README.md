@@ -12,6 +12,7 @@ Nesta edição, será construido um componente que simula o formulário de preen
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-instalação">Instalação</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-instrutores">Instrutores</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#memo-licença">Licença</a>
 </p>
 
@@ -38,6 +39,9 @@ Nesta edição, será construido um componente que simula o formulário de preen
 
   ### Biblioteca iMask
   Utilizada para criar mascáras de formatação em campos
+
+  ### Expressões Regulares - Regex
+  É uma tecnologia usada para buscar `PADRÕES` dentro de textos e pode ser aplicada em diversas linguagens de programação.
   ### JS | DOM
   Disponibilizar a função para ser acessada em um contexto global
     - globalThis.setCardType
@@ -66,18 +70,17 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💿 Instalação
 
-```bash
-# Faça o clone do repotório
-  git@github.com:RenanFachin/RS_ExplorerLab_RocketPAY.git
 
-# Acessar a pasta do projeto pelo terminal
-  cd RS_ExplorerLab_RocketPAY
+|                    Script | Target                                             |
+| ------------------------- | -------------------------------------------------- |
+|                    `npm i` | Instala as dependências do projeto      |
+|                    `npm run dev` | Roda o projeto no ambiente de desenvolvimento         |
 
-# Faça a instalação das depêndencias
-  npm i
 
-# Rodando o projeto
-  npm run dev
+## Instrutores
+- [Rockeseat](https://www.rocketseat.com.br/)
+- [Mayk Brito](https://github.com/maykbrito)
+- [Rodrigo Gonçalves](https://github.com/rodrigorgtic)
 
 ## 📝 Licença
 
@@ -85,4 +88,3 @@ Esse projeto está sob a licença MIT.
 
 ---
 
-Feito com ♥ by Rocketseat 👋 [Participe da nossa comunidade!](https://discord.gg/rocketseat)

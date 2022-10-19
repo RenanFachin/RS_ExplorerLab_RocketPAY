@@ -24,6 +24,31 @@ const securityCodeInputPatern = {
 // Aplicando o padrão criado junto ao campo selecionado pela DOM
 const securityCodeInputMasked = IMask(securityCodeInput, securityCodeInputPatern)
 
+// Variáveis de controle 
+const currentDate = String(new Date().getFullYear()).slice(2)
+const limitDateExpiration = String(new Date().getFullYear() + 10).slice(2)
+
+const expirationDateInput = document.querySelector("#expiration-date")
+const expirationDateInputPattern = {
+    // {/} vai criar automaticamente uma barra para separar os digitos
+    mask: "MM{/}YY",
+
+    // Criando validações para esta máscara
+    blocks: {
+        YY: {
+            mask: IMask.MaskedRange,
+            from: currentDate,
+            to: limitDateExpiration,
+        },
+        MM: {
+            mask: IMask.MaskedRange,
+            from: 1,
+            to: 12
+        }
+    }
+}
+
+const expirationDateInputMasked = IMask(expirationDateInput, expirationDateInputPattern)
 
 function setCardType(cardType){
     changeCreditCardBgColor(cardType)
