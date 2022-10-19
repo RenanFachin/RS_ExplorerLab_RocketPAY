@@ -32,6 +32,7 @@ const expirationDateInput = document.querySelector("#expiration-date")
 const expirationDateInputPattern = {
     // {/} vai criar automaticamente uma barra para separar os digitos
     mask: "MM{/}YY",
+    lazy: false,
 
     // Criando validações para esta máscara
     blocks: {
@@ -49,6 +50,45 @@ const expirationDateInputPattern = {
 }
 
 const expirationDateInputMasked = IMask(expirationDateInput, expirationDateInputPattern)
+
+
+const cardNumber = document.querySelector('#card-number')
+const cardNumberPattern = {
+    mask: [
+        {
+            mask: "0000 0000 0000 0000",
+            regex: /^4\d{0,15}/,
+            cardType: "visa"
+        },
+        {
+            mask: "0000 0000 0000 0000",
+            regex: /^(5[1-5]\d{0,2}|22[2-9]\d{0,1}|2[3-7]\d{0,2})\d{0,12}/,
+            cardType: "mastercard"
+        },
+        {
+            mask: "0000 0000 0000 0000",
+            cardType: "default"
+        },
+    ],
+    dispatch: function(appended, dynamicMasked){
+        const number = (dynamicMasked.value + appended).replace(/\D/, "")
+        // O replace vai fazer a trocar de todo e qualquer caracter que for digitado, que não sejam dígitos, se transformem em ""
+        // \D -> não digito
+
+        const foundMask = dynamicMasked.compiledMasks.find(function(item) {
+
+            return number.match(item.regex)
+
+        })
+
+        console.log(foundMask)
+
+        return foundMask
+    },
+}
+
+const cardNumberMasked = IMask(cardNumber, cardNumberPattern)
+
 
 function setCardType(cardType){
     changeCreditCardBgColor(cardType)
