@@ -12,6 +12,18 @@ const secondaryCreditCardBgColor = document.querySelector(".cc-bg svg > g g:nth-
 // Trocando a logo
 const creditCardLogo = document.querySelector(".cc-logo span:nth-child(2) img")
 
+// Campos de Input e Máscara
+// Capturando com a DOM
+const securityCodeInput = document.querySelector("#security-code")
+
+// Criando um padrão de máscara de formatação com o iMask
+const securityCodeInputPatern = {
+    mask: "0000"
+}
+
+// Aplicando o padrão criado junto ao campo selecionado pela DOM
+const securityCodeInputMasked = IMask(securityCodeInput, securityCodeInputPatern)
+
 
 function setCardType(cardType){
     changeCreditCardBgColor(cardType)
