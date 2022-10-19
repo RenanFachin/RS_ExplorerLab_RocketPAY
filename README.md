@@ -11,7 +11,7 @@ Nesta edição, será construido um componente que simula o formulário de preen
   <a href="#-aprendizados">Aprendizados</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-intalação">Instalação</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-instalação">Instalação</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#memo-licença">Licença</a>
 </p>
 
@@ -36,6 +36,8 @@ Nesta edição, será construido um componente que simula o formulário de preen
   ### Vite
   Utilização do VITE em um projeto vanilla JS. O vite utiliza o ES6 module para realizar os seus imports e exports
 
+  ### Biblioteca iMask
+  Utilizada para criar mascáras de formatação em campos
   ### JS | DOM
   Disponibilizar a função para ser acessada em um contexto global
     - globalThis.setCardType
