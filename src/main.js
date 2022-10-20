@@ -143,6 +143,18 @@ function updateCardNumber(cardNumber){
     ccNumber.innerText = cardNumber.length === 0 ? "1234 5678 9012 3456" : cardNumber
 }
 
+expirationDateInputMasked.on("accept", () => {
+    updateExpirationDate(expirationDateInputMasked.value)
+})
+
+function updateExpirationDate(date){
+    // Selecionando valor dentro da div com classe cc-extra
+    const ccExpiration = document.querySelector(".cc-extra .value")
+
+    //innerText é para alterar o que tem lá
+    ccExpiration.innerText = date.length === 0 ? "02/32" : date
+}
+
 
 function setCardType(cardType){
     changeCreditCardBgColor(cardType)
