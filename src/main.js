@@ -128,6 +128,17 @@ function updateSecurityCode(code){
     ccSecurity.innerText = code.length === 0 ? "123": code
 }
 
+cardNumberMasked.on("accept", () => {
+    updateCardNumber(cardNumberMasked.value)
+})
+
+function updateCardNumber(cardNumber){
+    const ccNumber = document.querySelector(".cc-number")
+
+    //cardNumber.length === 0 significa que nada foi digitado
+    ccNumber.innerText = cardNumber.length === 0 ? "1234 5678 9012 3456" : cardNumber
+}
+
 
 function setCardType(cardType){
     changeCreditCardBgColor(cardType)
