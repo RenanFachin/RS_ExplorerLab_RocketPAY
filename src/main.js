@@ -72,8 +72,7 @@ const cardNumberPattern = {
         },
         {
             mask: "0000 0000 0000 0000",
-            regex: /^((((636368)|(438935)|(504175)|(451416)|(636297))\d{0,10})|((5067)|(4576)|(4011))\d{0,12})$/
-            ,
+            regex: /^((((636368)|(438935)|(504175)|(451416)|(636297))\d{0,10})|((5067)|(4576)|(4011))\d{0,12})$/,
             cardType: "elo"
         },
         {
@@ -87,19 +86,24 @@ const cardNumberPattern = {
         // \D -> não digito
 
         const foundMask = dynamicMasked.compiledMasks.find(function(item) {
-
             return number.match(item.regex)
-
         })
-
-        console.log(foundMask)
-
         return foundMask
     },
 }
 
 const cardNumberMasked = IMask(cardNumber, cardNumberPattern)
 
+// Manipuação de eventos com a DOM
+const addButton = document.querySelector("#add-card")
+
+addButton.addEventListener("click", () => {
+    alert("Cartão adicionado com sucesso!")
+})
+
+document.querySelector("form").addEventListener("submit", (event) => {
+    event.preventDefault()
+})
 
 function setCardType(cardType){
     changeCreditCardBgColor(cardType)
