@@ -116,6 +116,18 @@ cardHolder.addEventListener("input", () => {
 
 })
 
+// Adicionando um evento junto ao iMask 
+securityCodeInputMasked.on("accept", () => {
+    updateSecurityCode(securityCodeInputMasked.value)
+})
+
+function updateSecurityCode(code){
+    // acessando o input e pegando a classe value dele
+    const ccSecurity = document.querySelector(".cc-security .value")
+
+    ccSecurity.innerText = code.length === 0 ? "123": code
+}
+
 
 function setCardType(cardType){
     changeCreditCardBgColor(cardType)
