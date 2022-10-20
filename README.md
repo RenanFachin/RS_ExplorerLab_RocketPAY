@@ -26,7 +26,7 @@ Nesta edição, será construido um componente que simula o formulário de preen
 
 ## 🏆 Aprendizados
   ### GIT CLI:
-  É uma ferramenta para uso do GitHub através das linhas de comando do terminal. Com o git cli é possível:
+  - É uma ferramenta para uso do GitHub através das linhas de comando do terminal. Com o git cli é possível:
     - Visualizar, criar e clonar repositórios
     - Criar, fechar, editar e visualizasr problemas e pull requests
     - Rever, fazer diff e merge de pull request
@@ -42,9 +42,11 @@ Nesta edição, será construido um componente que simula o formulário de preen
 
   ### Expressões Regulares - Regex
   É uma tecnologia usada para buscar `PADRÕES` dentro de textos e pode ser aplicada em diversas linguagens de programação.
+
   ### JS | DOM
-  Disponibilizar a função para ser acessada em um contexto global
+  - Disponibilizar a função para ser acessada em um contexto global
     - globalThis.setCardType
+  - Manipuação de eventos (`"click"`, `"submit"`, `"input"`)
 
 ## 🚀 Melhorias e Desafios feitos para ir além
 - Adicionado uma terceira bandeira de cartão (`American Express` e `Elo`).

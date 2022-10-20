@@ -105,6 +105,18 @@ document.querySelector("form").addEventListener("submit", (event) => {
     event.preventDefault()
 })
 
+const cardHolder = document.querySelector("#card-holder")
+cardHolder.addEventListener("input", () => {
+    // Capturando o valor
+    const creditCardHolder = document.querySelector(".cc-holder .value")
+
+    // Modificando o conteúdo deste value para o que estiver sendo digitado
+    // Aplicando um if ternário para aplicar condições específicas
+    creditCardHolder.innerText = cardHolder.value.length === 0 ? "FULANO DA SILVA" : cardHolder.value
+
+})
+
+
 function setCardType(cardType){
     changeCreditCardBgColor(cardType)
     changeCreditCardLogo(cardType)
